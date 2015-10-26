@@ -19,5 +19,8 @@ angular.module('ui.odometer', [])
       scope.$watch attrs.odometer, (newVal) ->
         odometer.update(newVal)
         return
+      scope.$on 'odometer-refresh', ->
+        odometer.render()
+        return
       return
 ])

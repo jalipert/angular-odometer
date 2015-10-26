@@ -21,6 +21,9 @@ angular.module('ui.odometer', []).provider('odometerOptions', function() {
         scope.$watch(attrs.odometer, function(newVal) {
           odometer.update(newVal);
         });
+        scope.$on('odometer-refresh', function(){
+          odometer.render();
+        });
       }
     };
   }
