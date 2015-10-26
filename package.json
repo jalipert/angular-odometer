@@ -7,9 +7,6 @@
   "description": "Angular.JS wrapper for Hubspot Odometer",
   "keywords": [],
   "license": "MIT",
-  "main": [
-    "./dist/angular-odometer.js"
-  ],
   "dependencies": {},
   "devDependencies": {
     "grunt": "0.4.5",
